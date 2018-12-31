@@ -1,16 +1,19 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: hello-world
+  name: configmap-secrets-hardcoded
   #  labels:
   #last_updated: 1
 spec:
-  rules:
-  - host: flubber.dynalias.com
-    http:
-      paths:
-      - path: /*
-        backend:
-          serviceName: hello-world
-          servicePort: 80
-
+#  rules:
+#  - host: flubber.dynalias.com
+#    http:
+#      paths:
+#      - path: /*
+#        backend:
+#          serviceName: configmap-secrets-hardcoded
+#          servicePort: 80
+#
+  backend:
+    serviceName: configmap-secrets-hardcoded
+    servicePort: 80

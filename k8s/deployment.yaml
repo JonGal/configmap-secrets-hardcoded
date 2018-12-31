@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: hello-world
-  name: hello-world
+    app: configmap-secrets-hardcoded
+  name: configmap-secrets-hardcoded
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: configmap-secrets-hardcoded
   template:
     metadata:
       labels:
-        app: hello-world
+        app: configmap-secrets-hardcoded
     spec:
       containers:
       - name: web
-        image: gcr.io/kube-teach1/hello-world:v1.0.0
+        image: gcr.io/kube-teach1/configmap-secrets-hardcoded:v1.0.0
         ports:
         - containerPort: 8080
         livenessProbe:
