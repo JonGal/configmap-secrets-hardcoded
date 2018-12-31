@@ -9,7 +9,7 @@ steps:
   - set
   - image
   - deployment
-  - hello-world
+  - configmap-secrets-hardcoded
   - web=gcr.io/$PROJECT_ID/configmap-secrets-hardcoded:1.1.$BUILD_ID
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1-c'
