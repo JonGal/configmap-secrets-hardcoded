@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: configmap-secrets-docker-environment
+  name: configmap-secrets-hardcoded
 spec:
   selector:
-    app: configmap-secrets-docker-environment
+    app: configmap-secrets-hardcoded
   ports:
   - protocol: TCP
     #nodePort: 32132

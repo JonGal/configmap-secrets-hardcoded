@@ -1,1 +1,1 @@
-# configmap-secrets-docker-environment
+# configmap-secrets-hardcoded
