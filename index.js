@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
   res.send('Hello, World!\n and all the people in it!');
+  res.end(`\n`);
 });
 
 app.get('/ck_passwords', (req, res) => {
