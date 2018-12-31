@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: configmap-secrets-hardcoded
+  name: configmap-secrets-docker-environment
   #  labels:
   #last_updated: 1
 spec:
@@ -11,9 +11,9 @@ spec:
 #      paths:
 #      - path: /*
 #        backend:
-#          serviceName: configmap-secrets-hardcoded
+#          serviceName: configmap-secrets-docker-environment
 #          servicePort: 80
 #
   backend:
-    serviceName: configmap-secrets-hardcoded
+    serviceName: configmap-secrets-docker-environment
     servicePort: 80
