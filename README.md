@@ -1,0 +1,1 @@
+# configmap-secrets-hardcoded
